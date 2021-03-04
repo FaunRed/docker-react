@@ -2,12 +2,9 @@ sudo: required
 services:
   - docker
 
-before_install
-  - docker build -t chaseovidiu/docker-react -f Dockerfile.dev .
+before_install:
+  - docker build -t   FaunRed/docker-react -f Dockerfile.dev .
 
 script:
-   - docker run chaseovidiu/docker-react npm run test -- --coverage
-    
-    
-
-
+  -docker run FaunRed/docker-react npm run test -- --coverage
+  
