@@ -3,8 +3,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t chaseovidiu/docker-react -f Dockerfile.dev .
+  - docker build -t faunred/docker-react -f Dockerfile.dev .
 
 script:
-  -docker run chasaeovidiu/docker-react npm run test -- --coverage
+  -docker run faunred/docker-react npm run test -- --coverage
 
